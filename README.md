@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/nativelibs4java/maven-velocity-plugin.svg?branch=master)](https://travis-ci.org/nativelibs4java/maven-velocity-plugin)
+
 `maven-velocity-plugin` is a [Velocity template](https://velocity.apache.org/) plugin for Maven.
 
 It interprets any template file in `src/main/velocity` (resp. `src/test/velocity`) and outputs the result to the appropriate locations: `*.java` files end up in `target/generated-sources/{main,test}` so that they can be compiled, while other files end up in `target/generated-resources/{main,test}`.
