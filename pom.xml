@@ -16,32 +16,47 @@
     <version>1.9-SNAPSHOT</version>
     <relativePath>../nativelibs4java/libraries</relativePath>
   </parent>
+
+  <scm>
+    <connection>scm:git:git@github.com:nativelibs4java/maven-velocity-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:nativelibs4java/maven-velocity-plugin.git</developerConnection>
+    <url>http://github.com/nativelibs4java/maven-velocity-plugin</url>
+  </scm>
   
   <dependencies>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+
   	<dependency>
-	  <groupId>org.apache.velocity</groupId>
-	  <artifactId>velocity</artifactId>
-	  <version>1.7</version>
-	</dependency>
+  	  <groupId>org.apache.velocity</groupId>
+  	  <artifactId>velocity</artifactId>
+  	  <version>1.7</version>
+  	</dependency>
 	
-	<dependency>
+	  <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-plugin-api</artifactId>
       <version>3.3.1</version>
     </dependency>
 	
-	<dependency>
+	  <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-project</artifactId>
       <version>3.0-alpha-2</version>
     </dependency>
   </dependencies>
+
   <build>
-	<plugins>
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-javadoc-plugin</artifactId>
-			<configuration>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-javadoc-plugin</artifactId>
+  			<configuration>
 	          <tags>
 		            <tag>
                   <name>description</name>
